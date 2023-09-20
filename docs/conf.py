@@ -1,8 +1,8 @@
 # Configuration file for the Sphinx documentation builder.
 import os
 
-from src.__metadata__ import __project__ as project
-from src.__metadata__ import __version__ as version
+from project_template.__metadata__ import __project__ as project
+from project_template.__metadata__ import __version__ as version
 
 # -- Environmental Data ------------------------------------------------------
 

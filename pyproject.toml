@@ -111,7 +111,7 @@ exclude_lines = [
 asyncio_mode = "auto"
 
 [tool.pyright]
-include = ["src"]
+include = ["project_template"]
 exclude = ["tools"]
 
 [tool.slotscheck]
@@ -149,7 +149,7 @@ ignore = [
     "PLW2901"  # pylint - for loop variable overwritten by assignment target
 ]
 line-length = 120
-src = ["src", "tests", "docs/examples"]
+src = ["project_template", "tests", "docs/examples"]
 target-version = "py38"
 
 [tool.ruff.pydocstyle]
