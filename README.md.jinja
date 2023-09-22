@@ -24,16 +24,18 @@ any project that is a part of the Jolt organization.
 
 ## New project checklist
 
+- [ ] Create the https://github.com/jolt-org/{{project_name}} repository.
+- [ ] If using docs: Create the https://github.com/jolt-org/{{project_name}}-docs-preview repository.
+- [ ] If not using docs: remove `.github/workflows/docs-preview.yaml`.
+- [ ] Update the [README.md](README.md) file with the project-specific information.
 - [ ] Initialize git repository: `$ git init`
-- [ ] Create the [GitHub repository][newrepo] with the same name as the project.
-- [ ] Stage and commit the files: `$ git add . && git commit -m "Initial commit"`
+- [ ] Stage the files: `$ git add ."`
 - [ ] Install pre-commit hooks: `$ pre-commit install`
 - [ ] Run pre-commit hooks: `$ pre-commit run --all-files`
-- [ ] Update the [README.md](README.md) file with the project-specific information.
-- [ ] (Optional if not using docs) Create the `$project-name-docs-preview` repository.
-  - [ ] If the project does not utilize docs, remove the `.github/workflows/docs-preview.yaml`.
-- [ ] Remove any template-specific sections from the repos
-- [ ] Commit the changes, push initial commit and open the repo up for contributions!
+- [ ] Stage any files that were modified by the pre-commit hooks: `$ git add .`
+- [ ] Commit the changes: `$ git commit -m "Initial commit"`
+- [ ] Add the remote: `$ git remote add origin https://github.com/jolt-org/{{project_name}}.git`
+- [ ] Push the changes: `$ git push -u origin main`
 
 ## Contributing
 
