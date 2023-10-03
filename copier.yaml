@@ -14,3 +14,8 @@ module_name:
     {% if not (module_name | regex_search('^[a-z][a-z0-9\_]+$')) %}
     module_name must start with a letter, followed one or more letters, digits or underscores all lowercase.
     {% endif %}
+
+
+_exclude:
+  - "README.rst"
+
