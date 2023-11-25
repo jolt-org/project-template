@@ -91,10 +91,6 @@ test = [
     "pytest-cov>=4.1.0",
 ]
 
-[tool.black]
-line-length = 120
-include = '\.pyi?$'
-
 [tool.codespell]
 skip = 'pdm.lock'
 
@@ -156,6 +152,10 @@ ignore = [
 line-length = 120
 src = ["{{module_name}}", "tests", "docs/examples"]
 target-version = "py38"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
 
 [tool.ruff.pydocstyle]
 convention = "google"
